@@ -7,6 +7,8 @@ const imageObserver = new IntersectionObserver((elem,observer)=>{
             observer.unobserve(img.target)
         }
     })
-},{});
+},{
+    rootMargin:"70px"
+});
 const allImagesArrayRef = document.querySelectorAll("img");
 allImagesArrayRef.forEach((item)=>imageObserver.observe(item))
